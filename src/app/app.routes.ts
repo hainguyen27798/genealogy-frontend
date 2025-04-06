@@ -7,4 +7,19 @@ export const routes: Routes = [
     loadComponent: () =>
       import('@app/modules/home/home-page/home-page.component').then((c) => c.HomePageComponent),
   },
+  {
+    path: 'auth',
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'login',
+      },
+      {
+        path: 'login',
+        loadComponent: () =>
+          import('@app/modules/auth/login/login.component').then((c) => c.LoginComponent),
+      },
+    ],
+  },
 ];

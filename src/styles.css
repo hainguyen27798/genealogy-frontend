@@ -1,2 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'tailwindcss';
+@import 'ng-zorro-antd/ng-zorro-antd.min.css';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@layer theme, base, components, utilities;
+
+@font-face {
+  font-family: thuphat;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('/fonts/UTM ThuPhap Thien An.ttf') format('truetype');
+}
+
+@theme {
+  --font-title: thuphat, sans-serif;
+
+  /* === Text Colors === */
+  --color-text-primary: #2e2e2e;
+  --color-text-secondary: #6f5c4b;
+  --color-text-muted: #a89f94;
+  --color-text-link: #cb6843;
+  --color-text-link-hover: #a95130;
+
+  /* === Background Colors === */
+  --color-bg-main: #f5f1eb;
+  --color-bg-card: #fffdf9;
+  --color-bg-alt: #efe7db;
+  --color-bg-dark: #1f1a17;
+
+  /* === Headings / Titles === */
+  --color-title: #4e3b2c;
+  --color-subtitle: #6f5c4b;
+
+  /* === Highlight / Focus === */
+  --color-highlight: #c9a66b;
+  --color-highlight-hover: #b88f53;
+  --color-focus-outline: #cb6843;
+
+  /* === Input Fields === */
+  --color-input-bg: #fffdf9;
+  --color-input-border: #c3b6a5;
+  --color-input-border-focus: #cb6843;
+  --color-input-placeholder: #a89f94;
+  --color-input-text: #2e2e2e;
+
+  /* === Buttons === */
+  --color-button-primary: #cb6843;
+  --color-button-primary-hover: #a95130;
+  --color-button-secondary: #708090;
+  --color-button-secondary-hover: #5d6a78;
+  --color-button-disabled: #e0d9cf;
+
+  /* === Borders & Dividers === */
+  --color-border-light: #d4cfc8;
+  --color-border-dark: #8b5e3c;
+  --color-divider: #e3d8c8;
+}

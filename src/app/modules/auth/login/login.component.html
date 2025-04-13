@@ -1,16 +1,31 @@
 <div class="flex justify-center items-center w-full min-h-full">
   <div
-    class="bg-input-bg/60 px-14 py-12 rounded-3xl border-[1.6px] shadow-lg border-input-border-focus max-w-full max-h-full"
+    class="bg-input-bg/60 flex flex-col gap-7 px-14 py-12 rounded-3xl border-[1.6px] shadow-lg border-input-border-focus max-w-full max-h-full"
   >
     <div class="relative">
-      <img ngSrc="/img/frame.svg" alt="" class="w-[350px]" height="245" width="414" priority />
+      <img ngSrc="/img/frame.svg" alt="" class="w-[300px]" height="245" width="414" priority />
       <div
-        class="size-full absolute top-0 left-0 flex justify-center items-center text-4xl font-title"
+        class="size-full absolute top-0 left-0 flex justify-center items-center text-[32px] font-title"
       >
-        <div class="pt-8 px-10 text-center leading-[1.7] text-text-primary">
-          <span class="text-3xl">Gia Phả</span><br />Nguyễn Đức
+        <div class="pt-6 px-10 text-center leading-[1.7]">
+          <span class="text-2xl">Gia Phả</span><br />Nguyễn Đức
         </div>
       </div>
     </div>
+    <div class="text-3xl font-bold text-center">Đăng Nhập</div>
+    <div class="flex flex-col gap-5">
+      <input nz-input placeholder="Nhập email đăng nhập" />
+      <nz-input-group [nzSuffix]="suffixTemplate">
+        <input nz-input placeholder="Nhập mật khẩu" [type]="showPassword() ? 'text' : 'password'" />
+      </nz-input-group>
+      <ng-template #suffixTemplate>
+        <div class="text-lg leading-5" (click)="toggleShowPassword()" role="presentation">
+          <div [class]="showPassword() ? 'icon-eye-off' : 'icon-eye'"></div>
+        </div>
+      </ng-template>
+    </div>
+    <button nz-button nzType="primary">
+      <span class="font-medium">Đăng Nhập</span>
+    </button>
   </div>
 </div>

@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'ng-zorro-antd/ng-zorro-antd.min.css';
+@import 'lucide-static/font/Lucide.css';
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/preflight.css' layer(base);
 @import 'tailwindcss/utilities.css' layer(utilities);
@@ -12,6 +11,34 @@
   font-weight: 200 700;
   font-display: swap;
   src: url('/fonts/UTM ThuPhap Thien An.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url('/fonts/Mulish-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url('/fonts/Mulish-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url('/fonts/Mulish-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url('/fonts/Mulish-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @theme {
@@ -57,4 +84,9 @@
   --color-border-light: #d4cfc8;
   --color-border-dark: #8b5e3c;
   --color-divider: #e3d8c8;
+}
+
+body {
+  color: var(--color-text-primary);
+  font-family: Mulish, sans-serif;
 }

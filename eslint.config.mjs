@@ -43,7 +43,6 @@ export default tsEslint.config(
         'error',
         {
           type: 'attribute',
-          prefix: 'app',
           style: 'camelCase',
         },
       ],
@@ -52,7 +51,6 @@ export default tsEslint.config(
         'error',
         {
           type: 'element',
-          prefix: 'app',
           style: 'kebab-case',
         },
       ],

@@ -1,7 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, signal } from '@angular/core';
-import { NzInputDirective, NzInputGroupComponent } from 'ng-zorro-antd/input';
 import { NzButtonComponent } from 'ng-zorro-antd/button';
+import { NzInputDirective, NzInputGroupComponent } from 'ng-zorro-antd/input';
 
 @Component({
   selector: 'app-login',

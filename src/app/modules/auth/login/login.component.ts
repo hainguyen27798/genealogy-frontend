@@ -1,11 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { NzButtonComponent } from 'ng-zorro-antd/button';
-import { NzInputDirective, NzInputGroupComponent } from 'ng-zorro-antd/input';
+import { NzInputDirective } from 'ng-zorro-antd/input';
 
 @Component({
   selector: 'app-login',
-  imports: [NgOptimizedImage, NzInputDirective, NzInputGroupComponent, NzButtonComponent],
+  imports: [NgOptimizedImage, NzInputDirective, NzButtonComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })

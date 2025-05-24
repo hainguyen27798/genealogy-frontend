@@ -1,4 +1,4 @@
-/*@import '../node_modules/lucide-static/font/Lucide.css';*/
+@import '../node_modules/lucide-static/font/Lucide.css';
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/preflight.css' layer(base);
 @import 'tailwindcss/utilities.css' layer(utilities);
@@ -10,33 +10,33 @@
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
-  src: url('/fonts/UTM ThuPhap Thien An.ttf') format('truetype');
+  src: url('assets/fonts/UTM ThuPhap Thien An.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Mulish;
-  src: url('/fonts/Mulish-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Mulish-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: Mulish;
-  src: url('/fonts/Mulish-Medium.ttf') format('truetype');
+  src: url('assets/fonts/Mulish-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Mulish;
-  src: url('/fonts/Mulish-Bold.ttf') format('truetype');
+  src: url('assets/fonts/Mulish-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: Mulish;
-  src: url('/fonts/Mulish-Black.ttf') format('truetype');
+  src: url('assets/fonts/Mulish-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }

@@ -8,7 +8,8 @@
         class="size-full absolute top-0 left-0 flex justify-center items-center text-[32px] font-title"
       >
         <div class="pt-6 px-10 text-center leading-[1.7]">
-          <span class="text-2xl">{{ 'login.genealogy' | translate }}</span><br />Nguyễn Đức
+          <span class="text-2xl">{{ 'login.genealogy' | translate }}</span>
+          <br />Nguyễn Đức
         </div>
       </div>
     </div>
@@ -27,7 +28,11 @@
           (click)="toggleShowPassword()"
           role="presentation"
         >
-          <div [class]="showPassword() ? 'icon-eye-off' : 'icon-eye'"></div>
+          @if (showPassword()) {
+            <i-lucide [img]="EyeOff" [size]="18"></i-lucide>
+          } @else {
+            <i-lucide [img]="Eye" [size]="18"></i-lucide>
+          }
         </div>
       </div>
     </div>

@@ -8,18 +8,17 @@
         class="size-full absolute top-0 left-0 flex justify-center items-center text-[32px] font-title"
       >
         <div class="pt-6 px-10 text-center leading-[1.7]">
-          <span class="text-2xl">Gia Phả</span><br />Nguyễn Đức
+          <span class="text-2xl">{{ 'login.genealogy' | translate }}</span><br />Nguyễn Đức
         </div>
       </div>
     </div>
-    <div class="text-3xl font-bold text-center" i18n>Login</div>
+    <div class="text-3xl font-bold text-center">{{ 'login.title' | translate }}</div>
     <div class="flex flex-col gap-5">
-      <input nz-input i18n-placeholder placeholder="Enter your email" />
+      <input nz-input [placeholder]="'login.enter_your_email' | translate" />
       <div class="relative">
         <input
           nz-input
-          i18n-placeholder
-          placeholder="Enter your password"
+          [placeholder]="'login.enter_your_password' | translate"
           class="!pr-10"
           [type]="showPassword() ? 'text' : 'password'"
         />
@@ -33,7 +32,7 @@
       </div>
     </div>
     <button nz-button nzType="primary">
-      <span class="font-medium" i18n>Login</span>
+      <span class="font-medium">{{ 'login.btn_login' | translate }}</span>
     </button>
   </div>
 </div>

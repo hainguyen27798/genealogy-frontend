@@ -1,0 +1,9 @@
+{
+  "login": {
+    "genealogy": "Genealogy",
+    "title": "Login",
+    "btn_login": "Login",
+    "enter_your_email": "Enter your email",
+    "enter_your_password": "Enter your password"
+  }
+}

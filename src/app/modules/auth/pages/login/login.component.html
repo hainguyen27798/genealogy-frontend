@@ -15,15 +15,14 @@
     </div>
     <div class="text-3xl font-bold text-center">{{ 'login.title' | translate }}</div>
     <div class="flex flex-col gap-5">
-      <input nz-input [placeholder]="'login.enter_your_email' | translate" />
-      <div class="relative">
-        <input
-          nz-input
-          [placeholder]="'login.enter_your_password' | translate"
-          class="!pr-10"
-          [type]="showPassword() ? 'text' : 'password'"
-        />
+      <input-field [placeholder]="'login.enter_your_email' | translate"></input-field>
+      <input-field
+        className="!pr-10"
+        [placeholder]="'login.enter_your_password' | translate"
+        [type]="showPassword() ? 'text' : 'password'"
+      >
         <div
+          ngProjectAs="input-field-icon"
           class="text-lg leading-5 absolute h-full w-10 right-0 top-0 flex justify-center items-center"
           (click)="toggleShowPassword()"
           role="presentation"
@@ -34,10 +33,12 @@
             <i-lucide [img]="Eye" [size]="18"></i-lucide>
           }
         </div>
-      </div>
+      </input-field>
     </div>
-    <button nz-button nzType="primary">
-      <span class="font-medium">{{ 'login.btn_login' | translate }}</span>
+    <button nz-button nzType="primary" class="!py-0">
+      <div class="font-medium text-base flex items-center justify-center">
+        {{ 'login.btn_login' | translate }}
+      </div>
     </button>
   </div>
 </div>

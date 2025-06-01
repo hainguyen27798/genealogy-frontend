@@ -1,23 +1,26 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+import { InputFieldComponent } from '@app/common/component/input-field/input-field.component';
+import { AuthService } from '@app/modules/auth/services/auth.service';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Eye, EyeOff, LucideAngularModule } from 'lucide-angular';
 import { NzButtonComponent } from 'ng-zorro-antd/button';
-import { NzInputDirective } from 'ng-zorro-antd/input';
 
 @Component({
   selector: 'app-login',
   imports: [
     NgOptimizedImage,
-    NzInputDirective,
     NzButtonComponent,
     TranslatePipe,
     LucideAngularModule,
+    InputFieldComponent,
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
+  private readonly _AuthService = inject(AuthService);
+
   showPassword = signal<boolean>(false);
 
   protected Eye = Eye;

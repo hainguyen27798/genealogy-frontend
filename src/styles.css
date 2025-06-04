@@ -88,3 +88,9 @@ body {
   color: var(--color-text-primary);
   font-family: Mulish, sans-serif;
 }
+
+html {
+  .ant-message-notice-content {
+    border-radius: 8px;
+  }
+}

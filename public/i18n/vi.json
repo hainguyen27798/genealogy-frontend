@@ -5,5 +5,16 @@
     "btn_login": "Đăng nhập",
     "enter_your_email": "Nhâp email đăng nhập",
     "enter_your_password": "Nhâp mật khẩu"
+  },
+  "input_error": {
+    "required": "Trường này là bắt buộc",
+    "email": "Email không hợp lệ",
+    "minlength": "Độ dài tối thiểu là {{requiredLength}} ký tự"
+  },
+  "error_title": {
+    "login": "Lỗi đăng nhập"
+  },
+  "error_msg": {
+    "email_or_password_is_incorrect": "Email hoặc mật khẩu không chính xác."
   }
 }
